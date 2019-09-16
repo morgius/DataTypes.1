@@ -4,21 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataTypes
+namespace Objects
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Person roman = new Person();
-            roman.Name = "Roman";
-            roman.LastName = "Nowak";
-            roman.BirthDate = 2000;
-            
-          
+            IAnimal animal = new Person();
+
+            Console.WriteLine(animal.GetLegs());
+            Console.WriteLine(animal.Name);
             Console.ReadLine();
         }
-
-       
     }
 }

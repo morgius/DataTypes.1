@@ -10,8 +10,8 @@ namespace Objects
     {
         static void Main(string[] args)
         {
-            IAnimal animal = new Person();
-
+            Animal animal = new Horse();
+            animal.Sound();
             Console.WriteLine(animal.GetLegs());
             Console.WriteLine(animal.Name);
             Console.ReadLine();

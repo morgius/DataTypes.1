@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Objects
 {
-    public class Horse : IAnimal
+    public class Horse : Animal
     {
         public string Name { get; set; } = "Horse";
 
-        public int GetLegs()
+        public override int GetLegs()
         {
             return 4;
         }

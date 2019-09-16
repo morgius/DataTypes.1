@@ -10,11 +10,11 @@ namespace DataTypes
     {
         static void Main(string[] args)
         {
-            int a, b, c;
-            a = 0;
-            b = 10;
-            c = a / b;
-            Console.WriteLine(c);
+            Person roman = new Person();
+            roman.Name = "Roman";
+            roman.LastName = "Nowak";
+            roman.BirthDate = 2000;
+            Console.WriteLine(roman.GetAge());
             Console.ReadLine();
         }
     }
